@@ -1,0 +1,17 @@
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  models: "models"
+  logs: "models/logs"
+
+model:
+  input_shape: [224, 224, 3]
+  num_classes: 2
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.0001
+  base_model: "MobileNetV2"
+
+classes:
+  - "with_mask"
+  - "without_mask"
