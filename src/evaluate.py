@@ -22,8 +22,7 @@ def evaluate():
     print("[INFO] evaluating network...")
     predIdxs = model.predict(testX, batch_size=config['model']['batch_size'])
     
-    # For each image in the testing set, we find the index of the
-    # label with corresponding largest predicted probability
+    # For each image in the testing set, we find the index of the label with corresponding largest predicted probability
     predIdxs = np.argmax(predIdxs, axis=1)
     
     print(classification_report(testY.argmax(axis=1), predIdxs, target_names=config['classes']))

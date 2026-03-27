@@ -30,12 +30,10 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 
     # loop over the detections
     for i in range(0, detections.shape[2]):
-        # extract the confidence (i.e., probability) associated with
-        # the detection
+        # extract the confidence (i.e., probability) associated with the detection
         confidence = detections[0, 0, i, 2]
 
-        # filter out weak detections by ensuring the confidence is
-        # greater than the minimum confidence
+        # filter out weak detections by ensuring the confidence is greater than the minimum confidence
         if confidence > 0.5:
             # compute the (x, y)-coordinates of the bounding box for
             # the object

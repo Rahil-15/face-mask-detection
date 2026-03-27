@@ -3,7 +3,7 @@ import sys
 import os
 import tensorflow as tf
 
-# Add project root to path
+# Add project file root to path 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.features.feature_builder import build_model

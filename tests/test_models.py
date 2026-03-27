@@ -2,7 +2,7 @@ import unittest
 import sys
 import os
 
-# Add project root to path
+# Add project file root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 class TestModelScripts(unittest.TestCase):
