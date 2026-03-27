@@ -15,7 +15,7 @@ from src.features.feature_builder import build_model
 def train():
     config = load_config()
     
-    # Load data
+    # Load data to train it
     print("[INFO] loading data...")
     trainX, testX, trainY, testY = get_train_test_data()
     
